@@ -1,0 +1,243 @@
+/* Cross Browser Compatability CSS */
+/**
+ * html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
+ * v1.6.1 2010-09-17 | Authors: Eric Meyer & Richard Clark
+ * html5doctor.com/html-5-reset-stylesheet/
+ */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after { content: ""; content: none; }
+
+ins { background-color: #ff9; color: #000; text-decoration: none; }
+
+mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold; }
+
+del { text-decoration: line-through; }
+
+abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+
+input, select { vertical-align: middle; }
+/*my code starts below*/
+p {
+    color: #4d4d4d;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 1em;
+	margin: 10px 25px;
+    padding: 10px;
+}
+body {
+    max-width: 950px;
+    margin: 10px 20px 10px 20px;
+    padding: 10px;
+}
+img {
+    max-width: 100%;
+}
+figcaption {
+    color: grey;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-style: italic;
+    font-weight: 100;
+    font-size: 0.75em;
+    text-align: center;
+}
+figure {
+    margin: 10px;
+    padding: 10px;
+}
+h1 {
+    color: #ff0033;
+    font-family: 'Alice';
+    font-size: 4em;
+    text-align: center;
+    padding: 20px;
+}
+
+h2 {
+    color: #4d4d4d;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 3em;
+    text-align: center;
+    line-height: 50%;
+}
+h3 {
+    color: #00cc00;
+    font-family: 'Alegreya Sans', sans-serif;
+    Font-size: 1.5em;
+    text-align: left;
+}
+h4 {
+    color: #0099ff;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 1.25em;
+    text-align: center;
+}
+
+    
+.traits {
+    background: #f0f8ff;
+    border: 2px dotted #00cc00;
+    padding: 20px;
+}
+.alist {
+    list-style-type: circle;
+    color: #4d4d4d;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-style: italic;
+  -webkit-column-count: 3; /* Chrome, Safari, Opera */
+   -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+  -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+   -moz-column-gap: 40px; /* Firefox */
+    column-gap: 40px;
+    margin: 30px 80px 50px 50px;
+   
+}
+.blist {
+    color: #4d4d4d;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: bold;
+    margin-left:350px;
+    height: 80px;
+    
+}
+div.next-element {
+    clear: both;
+}
+#welcome {
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 10px;
+}
+.quote {
+    border: 2px dashed #4d4d4d;
+    margin: 30px;
+    padding: 10px 20px;
+    background: #f0f8ff;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+#an {
+    text-decoration: line-through;
+}
+#photo01 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#fav01 {
+    width: 160px;
+    height: 50px;
+    color: white;
+    text-align: center;
+    background: #6666ff;
+    border: 2px dotted #ff0033;
+    padding: 5px;
+    border-radius: 10px;
+    float: left;
+}
+#fav02 {
+    width: 150px;
+    height: 50px;
+    color: white;
+    text-align: center;
+    background: #6666ff;
+    border: 2px dotted #ff0033;
+    padding: 5px;
+    border-radius: 10px;
+    float: left;
+}
+#fav03 {
+    width: 150px;
+    height: 50px;
+    color: white;
+    text-align: center;
+    background: #6666ff;
+    border: 2px dotted #ff0033;
+    padding: 5px;
+    border-radius: 10px;
+    float: left;
+}
+    #modal-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  height: 100%;
+  left: 0px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+ 
+#modal-box {
+  background-color: #fff;
+  border-radius: 5px;
+  border: 5px solid #454545;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 480px;
+  height: 150px;
+}
+ 
+#modal-show {
+  background: purple;
+  border-radius: 5px;
+  border: 4px outset purple;
+  color: white;
+  font-size: 2em;
+  margin: 0.5em;
+}
+ 
+#modal-hide {
+  background: white;
+  border-radius: 15px;
+  color: #454545;
+  display: block;
+  float: right;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 16px;
+  margin-right: -17px;
+  position: relative;
+  top: -18px;
+  width: 30px;
+}
+#newsletter-header {
+    color: #4d4d4d;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 150%;
+	padding: 20px;
+}
+#newsl
